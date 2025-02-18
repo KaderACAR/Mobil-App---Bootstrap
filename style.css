@@ -1,3 +1,33 @@
+body{
+    overflow-x: hidden !important;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.hamburger-icon div {
+    width: 20px;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(37, 74, 237, 1) 0%, rgba(153, 0, 114, 1) 100%);
+    margin: 5px;
+    transition: 0.3s;
+}
+
+
+.hamburger-icon.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-icon.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 .navbar-brand {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder !important;
@@ -159,10 +189,6 @@
 }
 
 .icon-feature {
-
-    /* background: linear-gradient(90deg, rgba(41,55,240,1) 61%, rgba(159,26,226,1) 95%);*/
-    /*hocaya sor netten aldığın bu kodu*/
-
     font-size: 40px;
     background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
     background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
@@ -209,9 +235,7 @@
     text-align: left;
     font-size: 5rem;
     margin-bottom: 0px;
-    background: -moz-linear-gradient(top, #003049 0%, #669bbc 100%);
-    background: -webkit-linear-gradient(top, #003049 0%, #669bbc 100%);
-    background: linear-gradient(to bottom, #003049 0%, #669bbc 100%);
+    background: linear-gradient(to bottom, #003049 0%, #1a1a1a 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -316,6 +340,26 @@
     .circle {
         margin-top: 60px;
     }
+
+    .navbar-btn{
+        display: none !important;
+    }
+
+    .navbar-collapse{
+        display: inline-block;
+        justify-content: center;
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 600;
+        font-weight: bolder !important;
+    }
+
+    .nav-link{
+        display: flex !important;
+        align-items: center;
+        justify-content: center !important;  
+        margin: .560rem !important;
+}
 }
 
 @media (max-width: 768px) {
@@ -333,6 +377,21 @@
     .text-for-bg{
         font-size: 60px;
     }
+
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    .phone-2{
+        height: 100% !important;
+        object-fit: contain;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        margin-left: 0;
+}
+    .icon-üst{
+        margin-top: 1.5rem;
+    }
+}
